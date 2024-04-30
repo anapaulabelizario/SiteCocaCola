@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coca</title>
+</head>
+<body id="total">
+    <header>
+        <img id="logoheader" class="logo1 logo2" src="logoantigo.jpg" alt="">
+        <button id="transformar" onclick="transformar()" >transformar</button>
+    </header>
+        
+    <main class="divmargintop">
+        <div class="divflexivel div1">
+            <p>O primeiro ano introduz os X-Men pelos olhos da novata Jubileu, cujos pais adotivos colocam seu nome no Ato de Registro de Mutantes, um programa do governo que quer eliminar os mutantes com ajuda dos Sentinelas, robôs gigantes criados especificamente para caçar indivíduos com gene-X. Ela é salva com ajuda dos X-Men, grupo de alunos que vivem e aprendem a controlar os seus poderes no instituto comandado pelo Professor Xavier. A formação inicial da equipe no desenho conta com Ciclope, Jean Grey, Wolverine, Vampira, Tempestade e Gambit. O Fera também integra o time, mas passa a primeira temporada quase toda preso após essa primeira batalha. O mesmo acontece com Morfo. O personagem, que também integra o grupo formado por Xavier, é dado como morto logo no comecinho da temporada</p>
+            <img id="imgTexto1" src="imgantiga1.jpg" alt="antigo1">
+        </div>
+
+        <iframe class="divmargintop" id="video1" width="560" height="315" src="https://www.youtube.com/embed/huGPCcv-et8?si=A-5_7nUcet32BDuV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe id="video2" width="560" height="315" src="https://www.youtube.com/embed/uhiBSsvWCRI?si=DX49EctNVNxyEyIA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
+        <div class="divflexivel divmargintop div2">
+            <img id="imgTexto2" src="imgantiga2.jpg" alt="antigo2">
+            <p>A segunda temporada começa com o casamento de Jean e Ciclope (para o terror do Wolverine). Os dois, no entanto, não têm tempo para a lua de mel e, logo de cara, são raptados pelo Senhor Sinistro e seus capangas, os Nasty Boys. No episódio, é revelado que o vilão fez uma lavagem cerebral no Morfo — o X-Man que supostamente tinha morrido na primeira temporada. Sob controle mental, o ex-X-Men enfrenta seus antigos amigos.</p>
+        </div>
+    </main>
+
+
+    <script>
+
+       function transformar(){
+        document.getElementById("total").style.backgroundColor = "black"
+        document.querySelector("body").style.color = "white"
+        document.getElementById("total").style.fontStyle ="italic"
+
+        document.getElementById("imgTexto1").style.borderRadius = "25px"
+        document.getElementById("imgTexto2").style.borderRadius = "25px"
+
+        var img = document.querySelector("#imgTexto1")
+        img.setAttribute('src','imgnova1.jpg')
+        img.style.border = "1px solid white"
+
+        var img2 = document.querySelector("#imgTexto2")
+        img2.setAttribute('src','imgnova2.jpg')
+        img2.style.border = "1px solid white"
+
+        var img1 = document.querySelector("#logoheader")
+        img1.setAttribute('src','logonovo.png')
+        
+        document.getElementById("video1").style.display = "none"
+        document.getElementById("video2").style.display = "flex"
+
+        document.getElementById("transformar").style.backgroundColor = "red"
+        document.getElementById("transformar").style.borderRadius = "10px"
+        document.getElementById("transformar").style.color = "white"
+        document.getElementById("transformar").style.border = "none"
+       } 
+    </script>
+</body>
+</html>

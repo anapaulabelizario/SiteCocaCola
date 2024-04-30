@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Impact;
+}
+
+.divflexivel{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+    align-items: center;
+}
+
+.divflexivel p{
+    width: 40%;
+}
+
+.divmargintop{
+    margin-top: 15%;
+
+}
+
+.logo1 {
+    width: 10%;
+}
+
+.logo2{
+    width: 15%;
+
+}
+
+#video2 {
+    display: none;
+    margin-top: 15%;
+    box-shadow: 1px 1px 20px white;
+    border-radius: 15px; 
+}
+
+.div1 img{
+    width: 35%;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header button{
+    height: 30px;
+    width: 15%;
+    
+}
+
+.div2{
+    margin-bottom: 15%;
+}
+
